@@ -1,0 +1,18 @@
+<div class="offcanvas offcanvas-start w-auto" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions">
+
+    <div class="offcanvas-header bg-dark">
+        <h3 class="offcanvas-title text-white">Gifs App</h3>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+
+    <div class="offcanvas-body bg-dark">
+        <h5 class="text-white pb-2">Historial de búsqueda</h5>
+        <div class="list-group list-reset">
+            <a href="#" *ngFor="let palabra of historial" (click)="buscar(palabra)" data-bs-dismiss="offcanvas"
+                class="list-group-item list-group-item-action fs-5">
+                {{palabra | titlecase}}
+            </a>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col">
+        <h5>Buscar:</h5>
+    </div>
+    <div class="col text-end">
+        <button class="btn pt-1 mb-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+</div>
+
+<!-- #txtBuscar crea una referencia del elemento para ser manipulado -->
+<input type="text" (keyup.enter)="buscar()" #txtBuscar class="form-control" placeholder="Buscar gifs">
